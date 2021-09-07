@@ -1,0 +1,8 @@
+rowMeans(old_data)
+colMeans(old_data)
+apply(old_data,1,sd)
+apply(old_data,2,sd)
+cor(old_data)
+table(old_data)
+summary(old_data)
+summary(t(old_data))
