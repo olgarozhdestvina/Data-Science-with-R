@@ -1,0 +1,8 @@
+csum_x <- cumsum(rnorm(1000))
+csum_y <- cumsum(rnorm(1000))
+csum_z <- cumsum(rnorm(1000))
+random_data <- cbind(csum_x, csum_y, csum_z)
+plot(csum_x, type='l', col='blue', ylim=range(random_data), lwd=3, main='Stock Prices', xlab='Time', ylab='Price')
+lines(csum_y, col='red', lty=2, lwd=2)
+lines(csum_z, col='green', lty=3, lwd=2)
+# title(main='Stock Prices', col.main='black', font.main=3)
